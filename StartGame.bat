@@ -17,11 +17,11 @@ exit /B 0
 
 :MAIN
 if not "%profile%" equ "" (
-  start D:\Games\Tools\DS4Windows\Scripts\ChangeProfile.bat %profile%
+  start %~dp0\ChangeProfile.bat %profile%
 )
 
 if "%force%" equ "hide-emulationstation" (
-  D:\Games\Tools\NirCmd\nircmd.exe win hide title EmulationStation
+  %~dp0\NirCmd\nircmd.exe win hide title EmulationStation
 )
 
 %directory:~0,2%
@@ -37,14 +37,14 @@ for /L %%x in () do (
 
 :EXIT
 if "%force%" equ "hide-emulationstation" (
-  D:\Games\Tools\NirCmd\nircmd.exe win show title EmulationStation
+  %~dp0\NirCmd\nircmd.exe win show title EmulationStation
 )
 
 if not "%profile%" equ "" (
-  start D:\Games\Tools\DS4Windows\Scripts\ChangeProfile.bat xbox360
+  start %~dp0\ChangeProfile.bat xbox360
   timeout 5
 )
 
-D:\Games\Tools\NirCmd\nircmd.exe win activate process emulationstation.exe
+%~dp0\NirCmd\nircmd.exe win activate process emulationstation.exe
 
 exit

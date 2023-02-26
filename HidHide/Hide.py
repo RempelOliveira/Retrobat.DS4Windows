@@ -2,13 +2,18 @@ import json
 import subprocess
 
 
-HidHideCLI = r'"C:\Program Files\Nefarius Software Solutions\HidHide\x64\HidHideCLI"'
-
-
 try:
+  def cli():
+    output = subprocess.Popen(
+      "where HidHideCLI", stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, encoding="utf-8")
+
+    return f'"{output.communicate()[0].strip()}"'
+
+  HidHideCLI = cli()
+
   def run():
     output = subprocess.Popen(
-        HidHideCLI + " --dev-gaming", stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+      HidHideCLI + " --dev-gaming", stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
 
     return output.communicate()[0]
 
