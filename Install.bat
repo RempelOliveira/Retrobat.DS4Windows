@@ -41,10 +41,10 @@ if /i "%p1:~,1%" equ "Y" (
 
   echo.
 
-  echo ------------------------------------------------------------------------
+  echo -----------------------------------------------------------------------------
   echo * Don't forget to install HidHide in DS4Windows settings tab and
-  echo   set HidHideCli installation folder path in Windows environment vars! *
-  echo ------------------------------------------------------------------------
+  echo   set HidHideCli installation folder path in Windows environment variables! *
+  echo -----------------------------------------------------------------------------
 )
 
 timeout 15
