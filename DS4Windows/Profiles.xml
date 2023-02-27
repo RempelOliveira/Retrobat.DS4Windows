@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Profile Configuration Data. 02/27/2023 14:07:42 -->
+<!-- Profile Configuration Data. 02/27/2023 15:02:47 -->
 <!-- Made with DS4Windows version 3.2.8 -->
 
 <Profile app_version="3.2.8" config_version="2">
@@ -12,13 +12,13 @@
   <formLocationY>363</formLocationY>
   <Controller1>Xbox360</Controller1>
   <Controller2>Xbox360</Controller2>
-  <Controller3>Default</Controller3>
+  <Controller3>Xbox360</Controller3>
   <Controller4>Default</Controller4>
   <Controller5>Default</Controller5>
   <Controller6>Default</Controller6>
   <Controller7>Default</Controller7>
   <Controller8>Default</Controller8>
-  <LastChecked>11/05/2022 15:51:57</LastChecked>
+  <LastChecked>05/11/2022 15:51:57</LastChecked>
   <CheckWhen>0</CheckWhen>
   <Notifications>2</Notifications>
   <DisconnectBTAtStop>False</DisconnectBTAtStop>

@@ -12,7 +12,7 @@ goto MAIN
 timeout 5
 tasklist | findstr /i "%p2%"
 
-if %errorlevel% equ 1 goto EXIT
+if "%errorlevel%" equ "1" goto EXIT
 exit /B 0
 
 :MAIN
