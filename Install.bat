@@ -23,9 +23,9 @@ set /p p1=Do you want to continue (Y/N)?
 if /i "%p1:~,1%" equ "Y" (
   echo.
 
-  echo ------------------------------
-  echo Instaling NirCdm ...
-  echo ------------------------------
+  echo --------------------------
+  echo Instaling NirCdm ... 
+  echo --------------------------
 
   echo.
   call :INSTALL_NirCmd
@@ -41,11 +41,11 @@ if /i "%p1:~,1%" equ "Y" (
 
   echo.
 
-  echo ------------------------------
-  echo Don't forget to install HidHide in the DS4Windows settings tab and
-  echo set the installation x64 folder path in the Windows environment variables!
-  echo ------------------------------
+  echo ------------------------------------------------------------------------
+  echo * Don't forget to install HidHide in DS4Windows settings tab and
+  echo   set HidHideCli installation folder path in Windows environment vars! *
+  echo ------------------------------------------------------------------------
 )
 
-timeout 10
+timeout 15
 exit
