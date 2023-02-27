@@ -1,5 +1,5 @@
-:: @echo off
-:: powershell -window hidden -command ""
+@echo off
+powershell -window hidden -command ""
 
 goto MAIN
 
