@@ -1,5 +1,4 @@
 @echo off
-powershell -window hidden -command ""
 
 goto MAIN
 
@@ -18,7 +17,28 @@ del DS4Windows\DS4Windows_3.2.8_x64.zip
 exit /B 0
 
 :MAIN
-call :INSTALL_NirCmd
-call :INSTALL_DS4Windows
+echo This script will install a few dependencies to use PS4 joysticks.
+set /p p1=Do you want to continue (Y/N)? 
 
-exit /B 0
+if /i "%p1:~,1%" equ "Y" (
+  echo.
+
+  echo ------------------------------
+  echo Instaling NirCdm ...
+  echo ------------------------------
+
+  echo.
+  call :INSTALL_NirCmd
+
+  echo.
+
+  echo ------------------------------
+  echo Instaling DS4Windows ...
+  echo ------------------------------
+
+  echo.
+  call :INSTALL_DS4Windows
+)
+
+timeout 10
+exit
