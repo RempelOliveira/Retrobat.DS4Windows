@@ -1,6 +1,8 @@
 # Retrobat.DS4Windows
 
+This is a 3rd-party implementation designed to help you use DS4Windows with Retrobat's retro games interface.
 
+With this package, you won't need to install DS4Windows to emulate Xbox 360 joysticks or make complex configurations. Just run a single file, follow the documentation, and almost everything you need will already be installed and pre-configured.
 
 # Donations
 
