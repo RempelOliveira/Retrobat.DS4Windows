@@ -4,7 +4,7 @@
 
 # Donations
 
-I'm not charging for this plugin. For me, it's a kind of hobby, and I like to contribute a few improvements and automations to help people with the same difficulties I had.
+I haven't charging for this plugin. For me, it's a kind of hobby, and I like to contribute a few improvements and automations to help people with the same difficulties I had.
 
 Anyway, if you feel grateful and would like to make a donation, please use the button below, it will help me to improve this plugin!
 
