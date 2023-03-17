@@ -62,7 +62,7 @@ Now run the `Install.bat` file and follow the instructions on the prompt when it
 
 # Compatibility
 
-This package was tested using only a specific configuration. See below the complete specifications was used.
+This package has been tested using the settings below.
 
 |                          | Version  | Model                    | Build      |
 |--------------------------|:--------:|:------------------------:|:----------:|
