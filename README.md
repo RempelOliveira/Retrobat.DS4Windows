@@ -16,11 +16,7 @@ Another cool thing about this package is that some games crash when starting via
 
 # Behavior
 
-This package install DS4Windows as a portable software with all joystick configurations you need. But, it's very important to remeber to install the HidHide software after runs the Install.bat file and set HidHideCli installation folder path in Windows environment variables.
-
-The installer will install the NirCmd software as well that is necessary for controll of windows of the system.
-
-After the complete installation, you'll need to create a Retrobat shortcut with a customized command and then you can use .bat files to start your Windows games (if they are set up for it - see below).
+This package install DS4Windows as a portable software with all joystick configurations you need and the NirCmd software as well that is necessary for controll of windows of the system.
 
 # Running
 
@@ -58,7 +54,17 @@ First of all, create a new directory inside the Retrobat installation directory 
 │
 ```
 
-Now run the `Install.bat` file and follow the instructions on the prompt when it opens. After install you'll have the complete package including the DS4Windows and NirCmd.
+Now run the `Install.bat` file and follow the instructions on the prompt when it opens. After install you'll have the complete package including the DS4Windows and NirCmd but it's very important to remeber you need install the HidHide software and set HidHideCli installation folder path in Windows environment variables after ending of installation.
+
+After these steps, just create a shortcut of the `retrobat.exe` file on your Desktop, right-click on it, select properties and change the value of the target field for the command below.
+
+```
+<DRIVE>:\<RETROBAT-ROOT-DIRECTORY-PATH>\plugins\NirCmd\nircmd.exe exec hide <DRIVE>:\<RETROBAT-ROOT-DIRECTORY-PATH>\plugins\Bat\StartRetrobat.bat
+```
+
+* Don't forget to change the drive and path to where Retrobat is installed.
+
+and then you can use a custom `.bat` file to start your Windows game.
 
 # Compatibility
 
