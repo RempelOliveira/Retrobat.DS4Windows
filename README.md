@@ -23,8 +23,6 @@ This package was tested using only a specific configuration. See below the compl
 | **DuaslShock4**    | 2       | CUH-ZCT2 4-698-771-23-F2 |            |
 | **Windows 10 Pro** | 22H2    |                          | 19045.2728 |
 
-<br />
-
 # Donations
 
 I haven't charging for this plugin. For me, it's a kind of hobby, and I like to contribute a few improvements and automations to help people with the same difficulties I had.
