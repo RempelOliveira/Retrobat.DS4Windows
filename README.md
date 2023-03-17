@@ -64,10 +64,10 @@ Now run the `Install.bat` file and follow the instructions on the prompt when it
 
 This package was tested using only a specific configuration. See below the complete specifications was used.
 
-|                    | Version | Model                    | Build      |
-|--------------------|:-------:|:------------------------:|:----------:|
-| **DuaslShock4**    | 2       | CUH-ZCT2 4-698-771-23-F2 |            |
-| **Windows 10 Pro** | 22H2    |                          | 19045.2728 |
+|                          | Version  | Model                    | Build      |
+|--------------------------|:--------:|:------------------------:|:----------:|
+| **DuaslShock4**          | 2        | CUH-ZCT2 4-698-771-23-F2 |            |
+| **Windows 10 Pro - x64** | 22H2 x64 |                          | 19045.2728 |
 
 # Donations
 
