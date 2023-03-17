@@ -20,11 +20,37 @@ This package install DS4Windows as a portable software with all joystick configu
 
 The installer will install the NirCmd software as well that is necessary for controll of windows of the system.
 
-After the complete installation, you'll need to create a Retrobat shortcut with a customized command and then you can use .bat files to start your Windows games.
+After the complete installation, you'll need to create a Retrobat shortcut with a customized command and then you can use .bat files to start your Windows games (if they are set up for it - see below).
 
 # Running
 
+First of all, create a new directory inside the Retrobat installation directory called `plugins`, download the zip from this repository and unzip it inside that folder. You'll have a structure like bellow.
 
+```
+│── Retrobat
+│   │── bios
+│   │── decorations
+│   │── emulationstation
+│   │── emulators
+│   │── ...
+│   │── plugins
+│       │── Bat
+│           │── HidHide
+│               │── ...
+│           │── ...
+│       │── DS4Windows
+│           │── Profiles
+│               │── ...
+│           │── ...
+│       │── NirCmd
+│           │── ...
+│       │── .gitignore
+│       │── Install.bat
+│       │── README.md
+│   │── ...
+│   │── retrobat.exe
+│   │── retrobat.ini
+```
 
 # Compatibility
 
