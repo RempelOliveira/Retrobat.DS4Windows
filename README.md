@@ -10,6 +10,8 @@ When I started inserting Windows games into Retrobat I had problems with my joys
 
 Once time I thought... "Hmmm, what if I start all the Retrobat dependencies at the same time?", so I started to write a way to do that just by turning on my joysticks and starting Retrobat.
 
+Another cool thing about this package is that some games crash when starting via Retrobat, SSFIV is one of them. A Direct X error is thrown and I don't know why, but there is a setting in the Retrobat menu to hide the interface before game startup, but this setting is global and I don't need it for all games. With this package this is also possible.
+
 I can't guarantee it will work in all cases, but I'll keep making improvements (when I have time for it).
 
 # Behavior
