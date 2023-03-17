@@ -12,7 +12,7 @@ Once time I thought... "Hmmm, what if I start all the Retrobat dependencies at t
 
 Another cool thing about this package is that some games crash when starting via Retrobat, SSFIV is one of them. A Direct X error is thrown and I don't know why, but there is a setting in the Retrobat menu to hide the interface before game startup, but this setting is global and I don't need it for all games. With this package this is also possible.
 
-I can't guarantee it will work in all cases, but I'll keep making improvements (when I have time for it).
+* I can't guarantee it will work in all cases, but I'll keep making improvements (when I have time for it).
 
 # Behavior
 
