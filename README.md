@@ -26,6 +26,8 @@ After the complete installation, you'll need to create a Retrobat shortcut with 
 
 First of all, create a new directory inside the Retrobat installation directory called `plugins`, download the zip from this repository and unzip it inside that folder. You'll have a structure like bellow.
 
+<br />
+
 ```
 │── Retrobat
 │   │── bios
