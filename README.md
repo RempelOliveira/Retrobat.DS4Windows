@@ -8,9 +8,9 @@ With this package, you won't need to install DS4Windows to emulate Xbox 360 joys
 
 When I started inserting Windows games into Retrobat I had problems with my joysticks. Some games worked with DualShock 4 and others only with the Xbox 360 joystick. With that in mind, I wrote this package to try to solve some of these problems in an automated way.
 
-Another cool thing about it is... I don't need to start anything manually, just my joysticks and Retrobat.
+Once time I thought... "Hmmm, what if I start all the Retrobat dependencies at the same time?", so I started to write a way to do that just by turning on my joysticks and starting Retrobat.
 
-* I can't guarantee it will work in all cases, but I'll keep making improvements (when I have time for it).
+I can't guarantee it will work in all cases, but I'll keep making improvements (when I have time for it).
 
 # Behavior
 
