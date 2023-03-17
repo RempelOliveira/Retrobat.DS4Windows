@@ -16,8 +16,6 @@ After the complete installation, you'll need to create a Retrobat shortcut with 
 
 This package was tested using only a specific configuration. See below the complete specifications was used.
 
-<br />
-
 |                    | Version | Model                    | Build      |
 |--------------------|:-------:|:------------------------:|:----------:|
 | **DuaslShock4**    | 2       | CUH-ZCT2 4-698-771-23-F2 |            |
