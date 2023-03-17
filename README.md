@@ -6,7 +6,7 @@ With this package, you won't need to install DS4Windows to emulate Xbox 360 joys
 
 # Running
 
-This package install DS4Windows as a portable software with all joystick configurations you need. But, it's very important to remeber to install the HidHide software after runs the Install.bat file.
+This package install DS4Windows as a portable software with all joystick configurations you need. But, it's very important to remeber to install the HidHide software after runs the Install.bat file and set HidHideCli installation folder path in Windows environment variables.
 
 The installer will install the NirCmd software as well that is necessary for controll of windows of the system.
 
