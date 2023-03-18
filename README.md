@@ -105,11 +105,10 @@ Look at below structure, you just need to create a .bat file with the same name 
 
 Now it's necessary to insert some commands in the .bat file. First, insert the next three lines as below.
 
-```bat {.line-numbers}
-@echo off
-powershell -window hidden -command ""
-
-
+```bat
+1 │ @echo off
+2 │ powershell -window hidden -command ""
+3 │
 ```
 
 # Compatibility
