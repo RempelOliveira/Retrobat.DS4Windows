@@ -20,7 +20,7 @@ This package install DS4Windows as a portable software with all joystick configu
 
 # Running
 
-First of all, create a new directory inside the Retrobat installation directory called `plugins`, download the zip from this repository and unzip it inside that folder. You'll have a structure like bellow.
+First of all, create a new directory inside the Retrobat installation directory called `plugins`, download the zip from this repository and unzip it inside that folder. You'll have a structure like below.
 
 ```
 │
@@ -30,8 +30,6 @@ First of all, create a new directory inside the Retrobat installation directory 
 │   │── decorations
 │   │   └── ...
 │   │── emulationstation
-│   │   └── ...
-│   │── emulators
 │   │   └── ...
 │   │── ...
 │   │── plugins
@@ -64,7 +62,55 @@ After these steps, just create a shortcut of the `retrobat.exe` file on your Des
 
 * Don't forget to change the drive and path to where Retrobat is installed.
 
-and then you can use a custom `.bat` file to start your Windows game.
+# Windows Games Configuration
+
+To make your Windows games starts up using this package is necessary create a `.bat` file for each game you want and set up the Retrobat to starts up Windows games from .bat files as well.
+
+Look at below structure, you just need to create a .bat file with the same name of the .exe file of your game.
+
+```
+│
+│── Retrobat
+│   │── bios
+│   │   └── ...
+│   │── decorations
+│   │   └── ...
+│   │── emulationstation
+│   │   └── ...
+│   │── rooms
+│   │   │── 3do
+│   │   │└── ...
+│   │   │── 3ds
+│   │   │   └── ...
+│   │   │── ...
+│   │   │── windows
+│   │   │   │── Game.One
+│   │   │   │   └── ...
+│   │   │   │── Game.Two
+│   │   │   │   └── ...
+│   │   │   │── Game.Three.batfile
+│   │   │   │   │── GT.bat
+│   │   │   │   │── GT.exe
+│   │   │   │   └── ...
+│   │   │   └── ...
+│   │   └── ...
+│   │── ...
+│   │── plugins
+│   │   └── ...
+│   │── ...
+│   │── retrobat.exe
+│   └── ...
+│
+```
+
+Now it's necessary to insert some commands in the .bat file. First, insert the next three lines as below.
+
+```{bat, attr.source='.numberLines'}
+@echo off
+powershell -window hidden -command ""
+
+
+```
 
 # Compatibility
 
