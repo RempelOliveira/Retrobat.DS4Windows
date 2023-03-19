@@ -7,7 +7,7 @@ goto MAIN
 tasklist | findstr /i DS4Windows.exe
 
 if "%errorlevel%" equ "1" (
-  python %~dp0\HidHide\Hide.py
+  %~dp0\..\Softwares\Python\python %~dp0\HidHide\Hide.py
 
   start %~dp0\..\Softwares\DS4Windows\DS4Windows.exe
 
@@ -44,6 +44,6 @@ for /L %%x in () do (
 %~dp0\..\Softwares\DS4Windows\DS4Windows.exe -command Disconnect
 %~dp0\..\Softwares\DS4Windows\DS4Windows.exe -command Shutdown
 
-python %~dp0\HidHide\Unhide.py
+%~dp0\..\Softwares\Python\python %~dp0\HidHide\Unhide.py
 
 exit

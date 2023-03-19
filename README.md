@@ -14,10 +14,6 @@ Another cool thing about this package is that some games crash when starting via
 
 * I can't guarantee it will work in all cases, but I'll keep making improvements (when I have time for it).
 
-# Behavior
-
-This package use DS4Windows as a portable software with all joystick configurations you need and the NirCmd software as well that is necessary for controll of windows of the system.
-
 # Running
 
 First of all, create a new directory called `plugins` inside the Retrobat installation directory, download the zip from this repository and unzip it inside that directory. You'll have a structure like below.
@@ -56,7 +52,7 @@ First of all, create a new directory called `plugins` inside the Retrobat instal
 │
 ```
 
-Now run the `Install.bat` file and follow the instructions on the prompt when it opens. After install you'll have the complete package including the DS4Windows and NirCmd but it's very important to remeber you need install the HidHide software and set HidHideCli installation directory path in Windows environment variables after ending of installation.
+Now run the `Install.bat` file and follow the instructions on the prompt when it opens. After install you'll have the complete package including the DS4Windows, NirCmd and Python as portable softwares. It's very important to remeber you need install the HidHide software and set HidHideCli installation directory path in Windows environment variables after ending of installation.
 
 After these steps, just create a shortcut of the `retrobat.exe` file on your Desktop, right-click on it, select properties and change the value of the target field for the command below.
 
