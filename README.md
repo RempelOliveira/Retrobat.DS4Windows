@@ -133,8 +133,8 @@ This package has been tested using the settings below.
 
 |                          | Version       | Model                    | Build      |
 |--------------------------|:-------------:|:------------------------:|:----------:|
-| **DuaslShock4**          | 2             | CUH-ZCT2 4-698-771-23-F2 |            |
 | **Retrobat**             | 4.0.2 ~ 5.1.1 |                          |            |
+| **DuaslShock4**          | 2             | CUH-ZCT2 4-698-771-23-F2 |            |
 | **Windows 10 Pro - x64** | 22H2 x64      |                          | 19045.2728 |
 
 # Donations
