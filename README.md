@@ -107,7 +107,7 @@ Look at below structure, you just need to create a .bat file with the same name 
 │
 ```
 
-Now it's necessary to insert some commands in the .bat file. There are some examples in the `Bat` directory.
+Now it's necessary to insert some commands in the .bat file.
 
 # Bat Files
 
