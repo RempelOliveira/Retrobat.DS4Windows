@@ -21,7 +21,7 @@ if not "%p3%" equ "" (
 )
 
 if "%p4%" equ "hide-emulationstation" (
-  %~dp0\..\NirCmd\nircmd.exe win hide title EmulationStation
+  %~dp0\..\Softwares\NirCmd\nircmd.exe win hide title EmulationStation
 )
 
 %p1:~0,2%
@@ -35,7 +35,7 @@ for /L %%x in () do (
 
 :EXIT
 if "%p4%" equ "hide-emulationstation" (
-  %~dp0\..\NirCmd\nircmd.exe win show title EmulationStation
+  %~dp0\..\Softwares\NirCmd\nircmd.exe win show title EmulationStation
 )
 
 if not "%p3%" equ "" (
@@ -43,6 +43,6 @@ if not "%p3%" equ "" (
   timeout 5
 )
 
-%~dp0\..\NirCmd\nircmd.exe win activate process emulationstation.exe
+%~dp0\..\Softwares\NirCmd\nircmd.exe win activate process emulationstation.exe
 
 exit

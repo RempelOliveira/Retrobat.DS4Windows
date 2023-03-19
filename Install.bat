@@ -3,16 +3,23 @@
 goto MAIN
 
 :INSTALL_NirCmd
-curl -L https://www.nirsoft.net/utils/nircmd-x64.zip -o NirCmd\nircmd-x64.zip
-tar -xf NirCmd\nircmd-x64.zip -C NirCmd\
-del NirCmd\nircmd-x64.zip
+curl -L https://www.nirsoft.net/utils/nircmd-x64.zip -o Softwares\NirCmd\nircmd-x64.zip
+tar -xf Softwares\NirCmd\nircmd-x64.zip -C Softwares\NirCmd\
+del Softwares\NirCmd\nircmd-x64.zip
 
 exit /B 0
 
 :INSTALL_DS4Windows
-curl -L https://github.com/Ryochan7/DS4Windows/releases/download/v3.2.8/DS4Windows_3.2.8_x64.zip -o DS4Windows\DS4Windows_3.2.8_x64.zip
-tar -xf DS4Windows\DS4Windows_3.2.8_x64.zip -C DS4Windows\ --strip 1
-del DS4Windows\DS4Windows_3.2.8_x64.zip
+curl -L https://github.com/Ryochan7/DS4Windows/releases/download/v3.2.8/DS4Windows_3.2.8_x64.zip -o Softwares\DS4Windows\DS4Windows_3.2.8_x64.zip
+tar -xf Softwares\DS4Windows\DS4Windows_3.2.8_x64.zip -C Softwares\DS4Windows\ --strip 1
+del Softwares\DS4Windows\DS4Windows_3.2.8_x64.zip
+
+exit /B 0
+
+:INSTALL_Python
+curl -L https://www.python.org/ftp/python/3.10.0/python-3.10.0-embed-amd64.zip -o Softwares\Python\python-3.10.0-embed-amd64.zip
+tar -xf Softwares\Python\python-3.10.0-embed-amd64.zip -C Softwares\Python\
+del Softwares\Python\python-3.10.0-embed-amd64.zip
 
 exit /B 0
 
@@ -33,6 +40,15 @@ if /i "%p1:~,1%" equ "Y" (
   echo.
 
   echo ------------------------------
+  echo Instaling Python ...
+  echo ------------------------------
+
+  echo.
+  call :INSTALL_Python
+
+  echo.
+
+  echo ------------------------------
   echo Instaling DS4Windows ...
   echo ------------------------------
 
@@ -41,10 +57,10 @@ if /i "%p1:~,1%" equ "Y" (
 
   echo.
 
-  echo -----------------------------------------------------------------------------
+  echo --------------------------------------------------------------------------------
   echo * Don't forget to install HidHide in DS4Windows settings tab and
-  echo   set HidHideCli installation folder path in Windows environment variables! *
-  echo -----------------------------------------------------------------------------
+  echo   set HidHideCli installation directory path in Windows environment variables! *
+  echo --------------------------------------------------------------------------------
 )
 
 timeout 15

@@ -3,13 +3,16 @@
 #
 
 NirCmd/*
+Python/*
+
 DS4Windows/*
 
 #
 # IGNORE EXCEPTIONS
 #
 
-NirCmd/README.md
+NirCmd/.keep
+Python/.keep
 
 DS4Windows/Profiles/Ds4.xml
 DS4Windows/Profiles/Xbox360.xml
@@ -17,5 +20,3 @@ DS4Windows/Profiles/Xbox360.xml
 DS4Windows/Actions.xml
 DS4Windows/Auto Profiles.xml
 DS4Windows/Profiles.xml
-
-DS4Windows/README.md
