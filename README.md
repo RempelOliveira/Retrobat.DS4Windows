@@ -20,7 +20,7 @@ This package use DS4Windows as a portable software with all joystick configurati
 
 # Running
 
-First of all, create a new directory called `plugins` inside the Retrobat installation directory, download the zip from this repository and unzip it inside that folder. You'll have a structure like below.
+First of all, create a new directory called `plugins` inside the Retrobat installation directory, download the zip from this repository and unzip it inside that directory. You'll have a structure like below.
 
 ```
 │
@@ -56,7 +56,7 @@ First of all, create a new directory called `plugins` inside the Retrobat instal
 │
 ```
 
-Now run the `Install.bat` file and follow the instructions on the prompt when it opens. After install you'll have the complete package including the DS4Windows and NirCmd but it's very important to remeber you need install the HidHide software and set HidHideCli installation folder path in Windows environment variables after ending of installation.
+Now run the `Install.bat` file and follow the instructions on the prompt when it opens. After install you'll have the complete package including the DS4Windows and NirCmd but it's very important to remeber you need install the HidHide software and set HidHideCli installation directory path in Windows environment variables after ending of installation.
 
 After these steps, just create a shortcut of the `retrobat.exe` file on your Desktop, right-click on it, select properties and change the value of the target field for the command below.
 
