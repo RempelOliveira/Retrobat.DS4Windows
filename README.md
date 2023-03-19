@@ -20,7 +20,7 @@ This package use DS4Windows as a portable software with all joystick configurati
 
 # Running
 
-First of all, create a new directory inside the Retrobat installation directory called `plugins`, download the zip from this repository and unzip it inside that folder. You'll have a structure like below.
+First of all, create a new directory called `plugins` inside the Retrobat installation directory, download the zip from this repository and unzip it inside that folder. You'll have a structure like below.
 
 ```
 │
