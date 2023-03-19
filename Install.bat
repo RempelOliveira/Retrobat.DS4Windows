@@ -4,7 +4,7 @@ goto MAIN
 
 :INSTALL_NirCmd
 curl -L https://www.nirsoft.net/utils/nircmd-x64.zip -o Softwares\NirCmd\nircmd-x64.zip
-tar -xf Softwares\NirCmd\nircmd-x64.zip -C NirCmd\
+tar -xf Softwares\NirCmd\nircmd-x64.zip -C Softwares\NirCmd\
 del Softwares\NirCmd\nircmd-x64.zip
 
 exit /B 0
