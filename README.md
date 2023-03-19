@@ -16,7 +16,7 @@ Another cool thing about this package is that some games crash when starting via
 
 # Behavior
 
-This package install DS4Windows as a portable software with all joystick configurations you need and the NirCmd software as well that is necessary for controll of windows of the system.
+This package use DS4Windows as a portable software with all joystick configurations you need and the NirCmd software as well that is necessary for controll of windows of the system.
 
 # Running
 
