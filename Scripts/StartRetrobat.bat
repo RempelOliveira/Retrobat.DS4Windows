@@ -9,7 +9,7 @@ tasklist | findstr /i DS4Windows.exe
 if "%errorlevel%" equ "1" (
   python %~dp0\HidHide\Hide.py
 
-  start %~dp0\..\DS4Windows\DS4Windows.exe
+  start %~dp0\..\Softwares\DS4Windows\DS4Windows.exe
 
   timeout 5
   %~dp0\ChangeProfile.bat xbox360
@@ -21,7 +21,7 @@ exit /B 0
 start %~dp0\..\..\retrobat.exe
 
 timeout 5
-%~dp0\..\NirCmd\nircmd.exe win activate process emulationstation.exe
+%~dp0\..\Softwares\NirCmd\nircmd.exe win activate process emulationstation.exe
 
 exit /B 0
 
@@ -41,8 +41,8 @@ for /L %%x in () do (
 )
 
 :EXIT
-%~dp0\..\DS4Windows\DS4Windows.exe -command Disconnect
-%~dp0\..\DS4Windows\DS4Windows.exe -command Shutdown
+%~dp0\..\Softwares\DS4Windows\DS4Windows.exe -command Disconnect
+%~dp0\..\Softwares\DS4Windows\DS4Windows.exe -command Shutdown
 
 python %~dp0\HidHide\Unhide.py
 

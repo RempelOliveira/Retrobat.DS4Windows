@@ -34,15 +34,19 @@ First of all, create a new directory inside the Retrobat installation directory 
 │   │── ...
 │   │── plugins
 │   │   │── Bat
+│   │   │   │── SSFIV.bat
+│   │   │   │── StreetFighterV.bat
+│   │   │── Scripts
 │   │   │   │── HidHide
 │   │   │   │   └── ...
 │   │   │   └── ...
-│   │   │── DS4Windows
-│   │   │   │── Profiles
+│   │   │── Softwares
+│   │   │   │── DS4Windows
+│   │   │   │   │── Profiles
+│   │   │   │   │   └── ...
 │   │   │   │   └── ...
-│   │   │   └── ...
-│   │   │── NirCmd
-│   │   │   └── ...
+│   │   │   │── NirCmd
+│   │   │   │   └── ...
 │   │   │── ...
 │   │   │── Install.bat
 │   │   └── ...
@@ -103,12 +107,26 @@ Look at below structure, you just need to create a .bat file with the same name 
 │
 ```
 
-Now it's necessary to insert some commands in the .bat file. First, insert the next three lines as below.
+Now it's necessary to insert some commands in the .bat file. There are some examples in the `Bat` directory.
+
+# Bat Files
+
+There are some examples in the `Bat` directory, open the files to follow the explanation below.
+
+The two first lines should't be changed and mainly needed to prevent Windows dialog to be opened in front of Retrobat interface. The third line consists of five parts separated by spaces. The first part is the main command and should not be changed either. The next parts are arguments to control the desired behavior.
+
+The arguments are:
 
 ```bat
-1 │ @echo off
-2 │ powershell -window hidden -command ""
-3 │
+1. The game .exe file directory path.
+      - If the game is in the Windows roms directory inside Retrobat, just use "%~dp0". (ex: Retrobat/roms/windows/GT.batfile/GT.exe)
+
+2. The .exe game file name
+
+3. The joystick profile needed to play the game. The options are: "ds4", "xbox360".
+      - This argument is optional, but if you are going to use the next argument without specifying the joystick, you will need to pass "." instead of a profile name.
+
+4. if you need to hide the Retrobat interface to avoid some weird errors, use "hide-emulationstation".
 ```
 
 # Compatibility
