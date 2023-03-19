@@ -117,9 +117,8 @@ The two first lines should't be changed and mainly needed to prevent Windows dia
 
 The arguments are:
 
-```bat
 1. The game .exe file directory path.
-      - If the game is in the Windows roms directory inside Retrobat, just use "%~dp0". (ex: Retrobat/roms/windows/GT.batfile/GT.exe)
+    * If the game is in the Windows roms directory inside Retrobat, just use "%~dp0". (ex: Retrobat/roms/windows/GT.batfile/GT.exe)
 
 2. The .exe game file name
 
@@ -127,7 +126,6 @@ The arguments are:
     * This argument is optional because the xbox360 profile is setted on Retrobat start up, but if you are going to use the next argument without specifying the joystick, pass "." instead of a profile name.
 
 4. if you need to hide the Retrobat interface to avoid some weird errors, use "hide-emulationstation".
-```
 
 # Compatibility
 
