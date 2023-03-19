@@ -14,6 +14,11 @@ curl -L https://github.com/Ryochan7/DS4Windows/releases/download/v3.2.8/DS4Windo
 tar -xf Softwares\DS4Windows\DS4Windows_3.2.8_x64.zip -C Softwares\DS4Windows\ --strip 1
 del Softwares\DS4Windows\DS4Windows_3.2.8_x64.zip
 
+:INSTALL_Python
+curl -L https://www.python.org/ftp/python/3.10.0/python-3.10.0-embed-amd64.zip -o Softwares\Python\python-3.10.0-embed-amd64.zip
+tar -xf Softwares\Python\python-3.10.0-embed-amd64.zip -C Softwares\Python\
+del Softwares\Python\python-3.10.0-embed-amd64.zip
+
 exit /B 0
 
 :MAIN
@@ -38,6 +43,20 @@ if /i "%p1:~,1%" equ "Y" (
 
   echo.
   call :INSTALL_DS4Windows
+
+  echo.
+
+  echo Do you have a Python installation in you OS? If not, this script will install fot you.
+  set /p p2=Do you want to continue (Y/N)? 
+
+  if /i "%p2:~,1%" equ "Y" (
+    echo ------------------------------
+    echo Instaling Python ...
+    echo ------------------------------
+
+    echo.
+    call :INSTALL_Python
+  )
 
   echo.
 
