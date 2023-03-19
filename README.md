@@ -118,7 +118,7 @@ The two first lines should't be changed and mainly needed to prevent Windows dia
 The arguments are:
 
 1. The game .exe file directory path.
-    * If the game is in the Windows roms directory inside Retrobat, just use "%~dp0". (ex: Retrobat/roms/windows/GT.batfile/GT.exe)
+    * If the game is in the Windows roms directory inside Retrobat, just use "%~dp0".
 
 2. The .exe game file name
 
