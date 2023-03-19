@@ -61,7 +61,7 @@ Now run the `Install.bat` file and follow the instructions on the prompt when it
 After these steps, just create a shortcut of the `retrobat.exe` file on your Desktop, right-click on it, select properties and change the value of the target field for the command below.
 
 ```
-<DRIVE>:\<RETROBAT-ROOT-DIRECTORY-PATH>\plugins\NirCmd\nircmd.exe exec hide <DRIVE>:\<RETROBAT-ROOT-DIRECTORY-PATH>\plugins\Bat\StartRetrobat.bat
+<DRIVE>:\<RETROBAT-DIR>\plugins\Softwares\NirCmd\nircmd.exe exec hide <DRIVE>:\<RETROBAT-DIR\plugins\Scripts\StartRetrobat.bat
 ```
 
 * Don't forget to change the drive and path to where Retrobat is installed.
