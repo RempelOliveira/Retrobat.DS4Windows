@@ -16,7 +16,7 @@ try:
     device = data.get("devices", [{}])[0]
 
     if device.get("serialNumber"):
-        subprocess.Popen(f'HidHideCLI --dev-hide "{device["deviceInstancePath"]}"')
+      subprocess.Popen(f'HidHideCLI --dev-hide "{device["deviceInstancePath"]}"').wait()
 
 except:
   pass

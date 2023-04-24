@@ -12,7 +12,7 @@ try:
     return data.decode("latin").replace("--dev-hide", "").replace('"', "").split()
 
   for data in to_list(run()):
-    subprocess.Popen(f'HidHideCLI --dev-unhide "{data}"')
+    subprocess.Popen(f'HidHideCLI --dev-unhide "{data}"').wait()
 
 except:
   pass
