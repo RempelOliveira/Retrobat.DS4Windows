@@ -5,6 +5,7 @@ set p1=%~1
 set p2=%~2
 set p3=%~3
 set p4=%~4
+set p5=%~5
 
 goto MAIN
 
@@ -28,6 +29,10 @@ if "%p4%" equ "hide-emulationstation" (
 
 cd %p1%
 start .\"%p2%"
+
+if not "%p5%" equ "" (
+  %~dp0\..\Softwares\AutoHotkey\AutoHotkey64.exe "%p5%"
+)
 
 for /L %%x in () do (
   call :CHECK_Game
